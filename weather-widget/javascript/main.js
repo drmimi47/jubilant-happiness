@@ -7,7 +7,7 @@ alert("hello, world!");
 
 
   function getWeatherData() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=10026&APPID=dc608cd922757b9bbf08cda5574e61c9`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=10026,us&APPID=dc608cd922757b9bbf08cda5574e61c9`)
   .then(response => response.json())
   .then(data => console.log(data));
   }
